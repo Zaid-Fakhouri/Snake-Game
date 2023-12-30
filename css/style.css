@@ -1,0 +1,182 @@
+/* starting the global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ending the global rules */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'VT323', monospace;
+}
+body,
+.snake {
+    background-color: #414141;
+}
+#game-board {
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    margin: 5px;
+}
+.game-border-1 {
+    border: #595f43 solid 10px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px #595f43;
+}
+.game-border-2 {
+    border: #abb78a solid 8px;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px #abb78a;
+}
+.game-border-3 {
+    border: #8b966c solid 15px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 5px #8b966c;
+}
+#instruction-text {
+    position: absolute;
+    top: 60%;
+    color: #414141;
+    width: 300px;
+    text-align: center;
+    padding: 30px;
+    text-transform: capitalize;
+}
+.scores {
+    display: flex;
+    justify-content: space-between;
+}
+#score {
+    color: #abb78a;
+}
+#score,
+#highScore {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+#highScore {
+    color: #d8ddca;
+    display: none;
+}
+.game-border-3 {
+    background-color: #c4cfa3;
+}
+.snake {
+    border: 1px dotted #5a5a5a;
+}
+.food {
+    background-color: #dedede;
+    border: 5px solid #999;
+}
+
+/* my phone updates */
+
+.keys-section {
+    background-color: white;
+    width: 300px;
+    height: 175px;
+    position: absolute;
+    bottom: 15px;
+    display: none;
+}
+
+.keys {
+    border: 1px solid black;
+    width: 70px;
+    height: 70px;
+}
+.keys img {
+    width: 100%;
+}
+
+.up {
+    position: absolute;
+    left: 115px;
+    top: 10px;
+}
+.right {
+        position: absolute;
+        top: 90px;
+        left: 200px;
+}
+.down {
+    position: absolute;
+    left: 115px;
+    top: 90px;
+}
+.left {
+    position: absolute;
+    top: 90px;
+    left: 30px;
+}
+.small-screen {
+    display: none;
+}
+@media (max-width: 767px) {
+    #game-board {
+            grid-template-columns: repeat(20, 15px);
+            grid-template-rows: repeat(20, 15px);
+        }
+    #instruction-text {
+        top: -10%;
+        position: relative;
+    }
+    .main-div {
+        position: absolute;
+        top: 5px;
+    }
+    .keys-section{
+        display: block;
+    }
+    .big-screen {
+        display: none;
+    }
+    .small-screen {
+        display: inline;
+    }
+}
+
