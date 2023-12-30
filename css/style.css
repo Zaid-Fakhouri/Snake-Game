@@ -118,7 +118,7 @@ body,
 .keys-section {
     background-color: white;
     width: 300px;
-    height: 175px;
+    height: 225px;
     position: absolute;
     bottom: 15px;
     display: none;
@@ -126,8 +126,8 @@ body,
 
 .keys {
     border: 1px solid black;
-    width: 70px;
-    height: 70px;
+    width: 85px;
+    height: 85px;
 }
 .keys img {
     width: 100%;
@@ -135,23 +135,23 @@ body,
 
 .up {
     position: absolute;
-    left: 115px;
-    top: 10px;
+    left: 108px;
+    top: 5px;
 }
 .right {
         position: absolute;
-        top: 90px;
-        left: 200px;
+        top: 80px;
+        right: 5px;
 }
 .down {
     position: absolute;
-    left: 115px;
-    top: 90px;
+    left: 108px;
+    bottom: 5px;
 }
 .left {
     position: absolute;
-    top: 90px;
-    left: 30px;
+    top: 80px;
+    left: 5px;
 }
 .small-screen {
     display: none;
