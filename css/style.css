@@ -127,6 +127,9 @@ body,
     display: none;
 }
 @media (max-width: 767px) {
+    .scores {
+        margin: 0 15px;
+    }
     #game-board {
             grid-template-columns: repeat(20, 15px);
             grid-template-rows: repeat(20, 15px);
