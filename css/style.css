@@ -56,6 +56,7 @@ body,
 .scores {
     display: flex;
     justify-content: space-between;
+    margin: 0 15px;
 }
 #score {
     color: #abb78a;
