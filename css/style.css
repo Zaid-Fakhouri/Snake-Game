@@ -126,13 +126,10 @@ body,
 .small-screen {
     display: none;
 }
-@media (max-width: 767px) {
-    .scores {
-        margin: 0 15px;
-    }
+@media (max-width: 991px) {
     #game-board {
-            grid-template-columns: repeat(20, 15px);
-            grid-template-rows: repeat(20, 15px);
+            grid-template-columns: repeat(20, 17px);
+            grid-template-rows: repeat(20, 17px);
         }
     #instruction-text {
         top: 25%;
@@ -152,4 +149,9 @@ body,
         display: inline;
     }
 }
-
+@media (max-width: 767px) {
+    #game-board {
+        grid-template-columns: repeat(20, 15px);
+        grid-template-rows: repeat(20, 15px);
+    }
+}
