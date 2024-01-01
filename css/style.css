@@ -90,12 +90,14 @@ body,
     position: absolute;
     bottom: 15px;
     display: none;
+    border-radius: 10px;
 }
 
 .keys {
     border: 1px solid black;
     width: 85px;
     height: 85px;
+    border-radius: 7px;
 }
 .keys img {
     width: 100%;
